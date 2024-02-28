@@ -1,5 +1,5 @@
 class A {
-  public static final int a = B.b + 1;
+  public static final int a = 2;
   // ...
 }
  
