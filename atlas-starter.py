@@ -6,20 +6,7 @@ import sys
 # you should not store your password in plain-text here.
 
 try:
-  client = pymongo.MongoClient(rom pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
-
-uri = "mongodb://mo911172:UCFStudent@<hostname>/?ssl=true&replicaSet=atlas-g6mfec-shard-0&authSource=admin&retryWrites=true&w=majority&appName=AtlasCluster"
-
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
-
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e))
+  client = pymongo.MongoClient("mongodb://mo911172:UCFStudent@<hostname>/?ssl=true&replicaSet=atlas-g6mfec-shard-0&authSource=admin&retryWrites=true&w=majority&appName=AtlasCluster")
   
 # return a friendly error if a URI error is thrown 
 except pymongo.errors.ConfigurationError:
